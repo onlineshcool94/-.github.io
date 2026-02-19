@@ -1,0 +1,59 @@
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* მარცხენა და მარჯვენა ერთზე ქვემოთ */
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .input-box, button {
+        width: 90%; /* ცოტა მარტივად დატოვებს input-ებს */
+    }
+
+    .right img {
+        height: 200px; /* არ დაიჭერდეს ძალიან დიდ სურათზე */
+        object-fit: contain;
+    }
+
+    .waves {
+        height: 100px; /* მოკლე კლაკლინები */
+    }
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+/* მარცხენა */
+.left {
+    flex: 1;
+    min-height: 100vh;
+}
+
+/* მარჯვენა */
+.right {
+    flex: 1;
+    min-height: 100vh;
+}
+@media (max-width: 768px) {
+    .left, .right {
+        min-height: 100vh;
+    }
+}
+.forgot{
+    margin-top:20px;
+    font-size:14px;
+    opacity:0.8;
+    cursor:pointer;
+    color:white;          /* რომ ლურჯი არ იყოს */
+    text-decoration:none; /* ხაზიც რომ მოიშალოს */
+}
